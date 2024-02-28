@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новое обьявление</title>
+    <link rel="stylesheet" href="css/ui.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="head head-profile">
+        <header class="header">
+            <div class="container">
+                <div class="header-inner">
+                    <a href="index.html" class="logo"><img src="public/image/icon/logo.svg" alt="logo"></a>
+                    <nav class="header-nav">
+                        <ul class="header-nav_list">
+                            <li class="header-nav_item">
+                                <a href="new.announcement.html">Добавить обьявление</a>
+                            </li>
+                            <li class="header-nav_item">
+                                <a href="#reviews">Отзывы</a>
+                            </li>
+                            <li class="header-nav_item">
+                                <a href="search.html">Поиск</a>
+                            </li>
+                            <li class="header-nav_item">
+                                <a href="sign.in.html" class="button blue">Войти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="burger mobile-control">
+                        <i class="fa-solid fa-grip-lines"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="profile-nav">
+            <div class="container">
+                <h1 class="profile-title">Новое обьявление</h1>
+                <ol class="breadcrumbs-list">
+                    <li class="breadcrumb-item">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumb-separator">
+                        /
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="profile.html">Профиль</a>
+                    </li>
+                    <li class="breadcrumb-separator">
+                        /
+                    </li>
+                    <li class="breadcrumb-item">
+                        Новое обьявление
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <div class="mobile-menu_inner">
+            <div class="mobile-menu_header">
+                <div class="header-left">
+                    <a href="index.html" class="logo">
+                        <img src="public/image/icon/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <button class="mobile-control">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="mobile-menu_auth">
+                <a class="button blue" href="sign.in.html">Вход</a>
+                <a class="button blue" href="sign.up.html">Регистрация</a>
+            </div>
+            <nav class="mobile-menu_nav">
+                <ul class="mobile-menu_list">
+                    <li class="mobile-menu_item">
+                        <a href="new.announcement.html">Добавить обьявление</a>
+                    </li>
+                    <li class="mobile-menu_item">
+                        <a href="#reviews">Отзывы</a>
+                    </li>
+                    <li class="mobile-menu_item">
+                        <a href="search.html">Поиск</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu_social">
+                <div class="mobile-menu_title">Мы в соцсетях</div>
+                <ul class="mobile-menu_social-list">
+                    <li class="mobile-menu_social-item">
+                        <a href="#">
+                            <i class="fa-brands fa-vk" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="mobile-menu_social-item">
+                        <a href="#">
+                            <i class="fa-brands fa-odnoklassniki" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <main class="main">
+        <section class="profile">
+            <div class="container">
+                <form action="profile.html" class="form-add">
+                    <div class="form-group">
+                        <div class="form-control">
+                            <input type="text" placeholder="Номер телефона">
+                            <p class="message">Поле не может быть пустым</p>
+                        </div>
+                        <div class="form-control">
+                            <input type="text" placeholder="E - mail">
+                            <p class="message">Поле не может быть пустым</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-control">
+                            <input type="text" name="type" placeholder="Вид животного">
+                            <p class="message">Поле не может быть пустым</p>
+                        </div>
+                        <div class="form-control">
+                            <input type="text" name="brand" placeholder="Клеймо, при его присутсвии">
+                            <p class="message">Поле не может быть пустым</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-control">
+                            <input type="text" name="location" placeholder="Район где было найдено животное">
+                            <p class="message">Поле не может быть пустым</p>
+                        </div>
+                        <div class="form-control">
+                            <input type="date" name="date" placeholder="Дата поиска">
+                            <p class="message">Поле не может быть пустым</p>
+                        </div>
+                    </div>
+                    <div class="drag-drop">
+                        <input type="file" id="file" name="files">
+                        <label for="file" class="drag">
+                            <div class="drag-title">Перетащите фото в данную область или нажмите загрузить</div>
+                            <div class="drag-descr">Обявление с фото дают больше результатов</div>
+                            <span class="button blue">Добавить</span>
+                        </label>
+                        <div class="drag-drop_descr">
+                            Максимальный размер фото 5мб, форматы: JPEG,PNG или GIF.
+                            Обратите внимание, указание контактной информации на фото не
+                            допускаються, максимальное колличество фотографий 3
+                        </div>
+                    </div>
+                    <ul class="preview-list">
+                        <li class="preview-item error">
+                            <img src="https://img.goodfon.ru/original/1920x1080/8/72/koshka-vzgliad-poza-kotenok-mordashka-ii-art-neiroset-sobaka.jpg"
+                                alt="preview">
+                            <p class="message-error">Ошибка</p>
+                            <button class="delete">
+                                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                            </button>
+                        </li>
+                        <li class="preview-item">
+                            <img src="https://img.goodfon.ru/original/1920x1080/8/72/koshka-vzgliad-poza-kotenok-mordashka-ii-art-neiroset-sobaka.jpg"
+                                alt="preview">
+                            <button class="delete">
+                                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                            </button>
+                        </li>
+                        <li class="preview-item">
+                            <img src="https://img.goodfon.ru/original/1920x1080/8/72/koshka-vzgliad-poza-kotenok-mordashka-ii-art-neiroset-sobaka.jpg"
+                                alt="preview">
+                            <button class="delete">
+                                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                            </button>
+                        </li>
+                    </ul>
+                    <textarea
+                        placeholder="Дополнительная информация, например, описание обстоятельств, при которых было найдено животное, порода, кличка и т.д"></textarea>
+                    <div class="form-add_footer">
+                        <div class="switch">
+                            <input type="checkbox" id="switch" name="approval">
+                            <label for="switch" class="label-switch"></label>
+                            <span> Согласен с политикой <a href="polictics.html">конфедециальности</a></span>
+                        </div>
+                        <button class="button blue" disabled>Опубликовать</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-group footer-logo">
+                    <a href="index.html" class="logo">
+                        <img src="public/image/icon/logo.svg" alt="logo">
+                    </a>
+                    © Удобный сервис поиска пропавших животных по всей России
+                </div>
+                <div class="footer-group">
+                    <div class="footer-nav_title">Контакты</div>
+                    <div class="footer-contact_info">
+                        По всем имеющимся вопросам
+                        обращайтесь по эллектронной почте:
+                        <a href="mailto:mail@newlife.ru">mail@newlife.ru</a> <br>
+                        Телефон горячей линии:
+                        <a href="tel:88002323235">8(800)123-45-67</a>
+                    </div>
+                </div>
+                <nav class="footer-nav">
+                    <div class="footer-nav_title">Полезная ифнормация</div>
+                    <ul class="footer-nav_list">
+                        <li class="footer-nav_item">
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="sign.in.html">Авторизация</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="profile.html">Личный кабинет</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="fount.pets.html">Найден питомец</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="search.html">Поиск</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer-group">
+                    <div class="footer-nav_title">Расскажи о нас друзьям</div>
+                    <ul class="social-list">
+                        <li class="social-item">
+                            <a href="#">
+                                <i class="fa-brands fa-vk"></i>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#">
+                                <i class="fa-brands fa-odnoklassniki"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/e30ccc070b.js" crossorigin="anonymous"></script>
+</body>
+</html>

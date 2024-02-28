@@ -1,0 +1,67 @@
+.header {
+    background-position: 25% 26% !important;
+}
+
+.pets-slider {
+    height: 400px;
+}
+
+.slider-wrapper,
+.slider-item {
+    height: 100%;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+}
+
+.pets-card_inner {
+    padding: 40px 0;
+}
+
+.pets-card_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pets-card_info {
+    max-width: 50%;
+    margin-top: 30px;
+}
+
+.pets-card_title {
+    font-size: 1.7vw;
+    font-family: 'Gilroy-Bold';
+}
+
+.pets-card_info-list{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px 0;
+}
+
+.pets-card_info-item{
+    gap: 0 10px;
+    display: flex;
+}
+
+.pets-card_info-item span{
+    font-family: 'Gilroy-Bold';
+}
+
+@media(max-width: 900px){
+    .pets-card_title{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 800px){
+    .pets-card_inner .container{
+        padding: 0 15px;
+    }
+    .pets-card_info{
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,213 @@
+.head-profile {
+    background-position: 36% 35%;
+}
+
+.profile {
+    padding: 30px 0;
+}
+
+.profile-main {
+    margin-top: 30px;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-title {
+    font-size: 32px;
+    font-family: 'Gilroy-Bold';
+    margin-bottom: 7px;
+}
+
+.profile-nav {
+    color: #fff;
+    padding: 60px 0;
+}
+
+.profile-main {
+    display: flex;
+    align-items: start;
+}
+
+.profile-left {
+    width: 300px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.profile-subtitle {
+    font-size: 19px;
+    font-family: 'Gilroy-Bold';
+}
+
+.account-info_items {
+    grid-gap: 30px 0;
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 1fr;
+}
+
+.account-info_item {
+    display: grid;
+    grid-gap: 0 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.account_info_group {
+    gap: 10px 0;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.account_info_group label {
+    font-size: 13px;
+    color: #00000056;
+    font-family: 'Gilroy-Medium';
+}
+
+.account_info_group span {
+    font-size: 15px;
+    font-family: 'Gilroy-Medium';
+}
+
+.account_info_group button {
+    position: absolute;
+    right: 0;
+}
+
+.profile-menu_nav {
+    margin-top: 20px;
+}
+
+.profie-menu_list {
+    gap: 15px 0;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.profile-right {
+    margin-left: 30px;
+}
+
+.profile-header {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-filters {
+    gap: 0 14px;
+    height: 30px;
+    display: flex;
+}
+
+.filter-control {
+    height: 100%;
+    max-width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 0 10px;
+    width: 110px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Gilroy-Medium';
+}
+
+.profile-header_title {
+    font-size: 30px;
+    font-family: 'Gilroy-Bold';
+}
+
+
+.catalog-list_profile {
+    width: 100%;
+    display: grid;
+    grid-gap: 15px;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.catalog-list_moderator{
+    width: 100%;
+    display: grid;
+    grid-gap: 15px;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media(max-width: 1300px) {
+    .profile-main {
+        width: 100%;
+        margin-top: 0;
+        flex-direction: column;
+        align-items: inherit;
+    }
+
+    .profile-right {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .profile-left {
+        width: auto;
+    }
+
+    .profie-menu_list {
+        gap: 0 20px;
+        flex-direction: initial;
+    }
+
+    .account-info_items {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .catalog-list_moderator{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    
+}
+
+@media(max-width: 900px) {
+    .catalog-list,
+    .catalog-list_profile{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .profile-header_title,
+    .profile-title {
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 600px) {
+    .account-info_items {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog-list_profile,
+    .catalog-list {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-header {
+        gap: 15px 0;
+        height: fit-content;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .filter-control {
+        width: 100%;
+        max-width: 100%;
+    }
+}

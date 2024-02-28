@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="css/ui.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="head head-profile">
+        <header class="header">
+            <div class="container">
+                <div class="header-inner">
+                    <a href="index.html" class="logo"><img src="public/image/icon/logo.svg" alt="logo"></a>
+                    <nav class="header-nav">
+                        <ul class="header-nav_list">
+                            <li class="header-nav_item">
+                                <a href="new.announcement.html">Добавить обьявление</a>
+                            </li>
+                            <li class="header-nav_item">
+                                <a href="#reviews">Отзывы</a>
+                            </li>
+                            <li class="header-nav_item">
+                                <a href="search.html">Поиск</a>
+                            </li>
+                            <li class="header-nav_item">
+                                <a href="sign.in.html" class="button blue">Войти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="burger mobile-control">
+                        <i class="fa-solid fa-grip-lines"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="profile-nav">
+            <div class="container">
+                <h1 class="profile-title">Профиль</h1>
+                <ol class="breadcrumbs-list">
+                    <li class="breadcrumb-item">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumb-separator">
+                        /
+                    </li>
+                    <li class="breadcrumb-item">
+                        Профиль
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <div class="mobile-menu_inner">
+            <div class="mobile-menu_header">
+                <div class="header-left">
+                    <a href="index.html" class="logo">
+                        <img src="public/image/icon/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <button class="mobile-control">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="mobile-menu_auth">
+                <a class="button blue" href="sign.in.html">Вход</a>
+                <a class="button blue" href="sign.up.html">Регистрация</a>
+            </div>
+            <nav class="mobile-menu_nav">
+                <ul class="mobile-menu_list">
+                    <li class="mobile-menu_item">
+                        <a href="new.announcement.html">Добавить обьявление</a>
+                    </li>
+                    <li class="mobile-menu_item">
+                        <a href="#reviews">Отзывы</a>
+                    </li>
+                    <li class="mobile-menu_item">
+                        <a href="search.html">Поиск</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu_social">
+                <div class="mobile-menu_title">Мы в соцсетях</div>
+                <ul class="mobile-menu_social-list">
+                    <li class="mobile-menu_social-item">
+                        <a href="#">
+                            <i class="fa-brands fa-vk" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="mobile-menu_social-item">
+                        <a href="#">
+                            <i class="fa-brands fa-odnoklassniki" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <main class="main">
+        <section class="profile">
+            <div class="container">
+                <div class="profile-main">
+                    <div class="profile-left">
+                        <div class="profile-subtitle">Персональная информация</div>
+                        <div class="account-info_items">
+                            <div class="account-info_item">
+                                <div class="account_info_group">
+                                    <label>Email</label>
+                                    <span>offer@mail.ru</span>
+                                    <!-- <button><i class="fa-solid fa-highlighter"></i></button> -->
+                                </div>
+                                <div class="account_info_group">
+                                    <label>Телефон</label>
+                                    <span>8 800 23 23 23 5</span>
+                                    <!-- <button><i class="fa-solid fa-highlighter"></i></button> -->
+                                </div>
+                            </div>
+                            <div class="account-info_item">
+                                <div class="account_info_group">
+                                    <label>Всего обьявлений</label>
+                                    <span>12</span>
+                                </div>
+                                <div class="account_info_group">
+                                    <label>Найдено животных</label>
+                                    <span>12</span>
+                                </div>
+                            </div>
+                            <div class="account-info_item">
+                                <div class="account_info_group">
+                                    <label>Всего дней</label>
+                                    <span>12</span>
+                                </div>
+                                <div class="account_info_group">
+                                    <label>Зарегестрирован</label>
+                                    <span>13.11.2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-menu_nav">
+                            <div class="profile-subtitle">Навигация</div>
+                            <ul class="profie-menu_list">
+                                <li class="profile-menu_item">
+                                    <a href="new.announcement.html">Добавить обьявление</a>
+                                </li>
+                                <li class="profile-menu_item">
+                                    <a href="index.html">Выйти</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="profile-right">
+                        <div class="profile-header">
+                            <div class="profile-header_title">Мои обьявления</div>
+                            <div class="profile-filters">
+                                <select class="filter-control" name="catalog_status">
+                                    <option value="moderation">На модерации</option>
+                                    <option value="active">Активно</option>
+                                    <option value="found">Найдено</option>
+                                    <option value="archive">В архиве</option>
+                                </select>
+                            </div>
+                        </div>
+                        <ul class="catalog-list_profile">
+                            <li class="catalog-item">
+                                <div class="catalog-image">
+                                    <img src="https://img.goodfon.ru/original/1920x1080/f/20/koshka-kot-vzgliad-poza-mordashka-sobaka.jpg"
+                                        alt="catalog-img">
+                                    <div class="catalog-item_control">
+                                        <div class="status">На модерации</div>
+                                        <div class="publication">7 дней назад</div>
+                                    </div>
+                                </div>
+                                <div class="catalog-info">
+                                    <div class="catalog-info_group">
+                                        <div class="catalog-info_item">
+                                            <label>Номер телефона</label>
+                                            <span>8 800 23 23 23 5</span>
+                                        </div>
+                                        <div class="catalog-info_item">
+                                            <label>Email</label>
+                                            <span>offer@mail.ru</span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info_group">
+                                        <div class="catalog-info_item">
+                                            <label>Район</label>
+                                            <span>Фасадная улица, Лесной Городок</span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info_group">
+                                        <div class="catalog-info_item">
+                                            <label>Клеймо</label>
+                                            <span>Отсутствует</span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info_group">
+                                        <div class="catalog-info_item">
+                                            <label>Доп инфа</label>
+                                            <span>Отсутствует</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="catalog-item">
+                                <div class="catalog-image">
+                                    <img src="https://img.goodfon.ru/original/1920x1080/f/20/koshka-kot-vzgliad-poza-mordashka-sobaka.jpg"
+                                        alt="catalog-img">
+                                    <div class="catalog-item_control">
+                                        <div class="status">На модерации</div>
+                                        <div class="publication">7 дней назад</div>
+                                    </div>
+                                </div>
+                                <div class="catalog-info">
+                                    <div class="catalog-info_group">
+                                        <div class="catalog-info_item">
+                                            <label>Номер телефона</label>
+                                            <span>8 800 23 23 23 5</span>
+                                        </div>
+                                        <div class="catalog-info_item">
+                                            <label>Email</label>
+                                            <span>offer@mail.ru</span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info_group">
+                                        <div class="catalog-info_item">
+                                            <label>Район</label>
+                                            <span>Фасадная улица, Лесной Городок</span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info_group">
+                                        <div class="catalog-info_item">
+                                            <label>Клеймо</label>
+                                            <span>Отсутствует</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="catalog-item">
+                                <div class="catalog-image">
+                                    <img src="https://img.goodfon.ru/original/1920x1080/f/20/koshka-kot-vzgliad-poza-mordashka-sobaka.jpg"
+                                        alt="catalog-img">
+                                    <div class="catalog-item_control">
+                                        <div class="status">На модерации</div>
+                                        <div class="publication">7 дней назад</div>
+                                    </div>
+                                </div>
+                                <div class="catalog-info">
+                                    <div class="catalog-info_group">
+                                        <div class="catalog-info_item">
+                                            <label>Номер телефона</label>
+                                            <span>8 800 23 23 23 5</span>
+                                        </div>
+                                        <div class="catalog-info_item">
+                                            <label>Email</label>
+                                            <span>offer@mail.ru</span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info_group">
+                                        <div class="catalog-info_item">
+                                            <label>Район</label>
+                                            <span>Фасадная улица, Лесной Городок</span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info_group">
+                                        <div class="catalog-info_item">
+                                            <label>Клеймо</label>
+                                            <span>Отсутствует</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="catalog-item">
+                                <div class="catalog-image">
+                                    <img src="https://img.goodfon.ru/original/1920x1080/f/20/koshka-kot-vzgliad-poza-mordashka-sobaka.jpg"
+                                        alt="catalog-img">
+                                    <div class="catalog-item_control">
+                                        <div class="status">На модерации</div>
+                                        <div class="publication">7 дней назад</div>
+                                    </div>
+                                </div>
+                                <div class="catalog-info">
+                                    <div class="catalog-info_group">
+                                        <div class="catalog-info_item">
+                                            <label>Номер телефона</label>
+                                            <span>8 800 23 23 23 5</span>
+                                        </div>
+                                        <div class="catalog-info_item">
+                                            <label>Email</label>
+                                            <span>offer@mail.ru</span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info_group">
+                                        <div class="catalog-info_item">
+                                            <label>Район</label>
+                                            <span>Фасадная улица, Лесной Городок</span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info_group">
+                                        <div class="catalog-info_item">
+                                            <label>Клеймо</label>
+                                            <span>Отсутствует</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="catalog-item">
+                                <div class="catalog-image">
+                                    <img src="https://img.goodfon.ru/original/1920x1080/f/20/koshka-kot-vzgliad-poza-mordashka-sobaka.jpg"
+                                        alt="catalog-img">
+                                    <div class="catalog-item_control">
+                                        <div class="status">На модерации</div>
+                                        <div class="publication">7 дней назад</div>
+                                    </div>
+                                </div>
+                                <div class="catalog-info">
+                                    <div class="catalog-info_group">
+                                        <div class="catalog-info_item">
+                                            <label>Номер телефона</label>
+                                            <span>8 800 23 23 23 5</span>
+                                        </div>
+                                        <div class="catalog-info_item">
+                                            <label>Email</label>
+                                            <span>offer@mail.ru</span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info_group">
+                                        <div class="catalog-info_item">
+                                            <label>Район</label>
+                                            <span>Фасадная улица, Лесной Городок</span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog-info_group">
+                                        <div class="catalog-info_item">
+                                            <label>Клеймо</label>
+                                            <span>Отсутствует</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-group footer-logo">
+                    <a href="index.html" class="logo">
+                        <img src="public/image/icon/logo.svg" alt="logo">
+                    </a>
+                    © Удобный сервис поиска пропавших животных по всей России
+                </div>
+                <div class="footer-group">
+                    <div class="footer-nav_title">Контакты</div>
+                    <div class="footer-contact_info">
+                        По всем имеющимся вопросам
+                        обращайтесь по эллектронной почте:
+                        <a href="mailto:mail@newlife.ru">mail@newlife.ru</a> <br>
+                        Телефон горячей линии:
+                        <a href="tel:88002323235">8(800)123-45-67</a>
+                    </div>
+                </div>
+                <nav class="footer-nav">
+                    <div class="footer-nav_title">Полезная ифнормация</div>
+                    <ul class="footer-nav_list">
+                        <li class="footer-nav_item">
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="sign.in.html">Авторизация</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="profile.html">Личный кабинет</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="fount.pets.html">Найден питомец</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="search.html">Поиск</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer-group">
+                    <div class="footer-nav_title">Расскажи о нас друзьям</div>
+                    <ul class="social-list">
+                        <li class="social-item">
+                            <a href="#">
+                                <i class="fa-brands fa-vk"></i>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#">
+                                <i class="fa-brands fa-odnoklassniki"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/e30ccc070b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
