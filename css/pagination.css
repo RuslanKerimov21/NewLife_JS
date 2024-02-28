@@ -1,0 +1,37 @@
+.ui-pagination {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.ui-pagintaion_item {
+    margin-right: 13px;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    background: transparent;
+    display: flex;
+    color: #000000;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .2s ease;
+    border: 1px solid #000;
+}
+.ui-pagintaion_item.active {
+    color: #fff;
+    background: #0d4fd3;
+    border: 1px solid transparent;
+}
+.ui-pagintaion_item:hover {
+    color: #fff;
+    background: #0d4fd3;
+    border: 1px solid transparent;
+}
+.ui-pagintaion_prev {
+    margin-right: 15px;
+    cursor: pointer;
+}
+.ui-pagintaion_next {
+    cursor: pointer;
+    margin-left: 15px;
+}

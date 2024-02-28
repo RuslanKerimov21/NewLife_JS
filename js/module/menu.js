@@ -1,17 +1,12 @@
-export function menu() {
-    const mobileMenu = document.querySelector('.mobile-menu')
-    const triger = document.querySelectorAll('.mobile-control')
-    if (mobileMenu) {
-        triger.forEach((el) => {
-            el.addEventListener("click", hanleMenu(mobileMenu));
+export default function menu(control, content) {
+    control.forEach((el) => {
+        el.addEventListener("click", () => {
+            if (content.classList.contains("active")) {
+                content.classList.remove("active");
+            }
+            else {
+                content.classList.add("active")
+            }
         })
-    }
-    function hanleMenu(elem) {
-        if (elem.classList.contains('active')) {
-            elem.classList.remove('active')
-        }
-        else {
-            elem.classList.add('active');
-        }
-    }
+    })
 }

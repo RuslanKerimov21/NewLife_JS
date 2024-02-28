@@ -1,38 +1,15 @@
-.mobile-menu {
-    display: none;
-}
-
-/* Цвета */
 .blue {
     background: #326BDC;
 }
-
 .hero {
     background: #3E4043;
 }
-
 .primary {
     background: #00000030;
 }
-
 .violet {
     background: #2d2e47;
 }
-
-/* Цвета */
-/* Кнопки */
-.edit,
-.delete {
-    width: 20px;
-    height: 20px;
-    display: flex;
-    font-size: 11px;
-    border-radius: 4px;
-    align-items: center;
-    justify-content: center;
-    background: #26156e42;
-}
-
 .button {
     color: #fff;
     display: flex;
@@ -45,88 +22,18 @@
     transition: all .2s ease;
     font-family: 'Gilroy-SemiBold' !important;
 }
-
 .button:disabled {
     color: #000;
     background: #D9D9D9;
 }
-
+.button:not(.disabled):hover {
+    color: #000000;
+    background: #D9D9D9;
+}
 .button:hover {
     background: #0d4fd3;
     color: #fff !important;
 }
-
-.slider-button {
-    display: flex;
-    border-radius: 100%;
-    align-items: center;
-    width: 30px !important;
-    justify-content: center;
-    height: 30px !important;
-    color: #fff !important;
-}
-
-.slider-button::after {
-    content: none !important;
-}
-
-.swiper-pagination {
-    margin-top: 30px;
-    position: relative !important;
-    text-align: left !important;
-}
-
-.swiper-pagination-bullet {
-    background: #fff !important;
-}
-
-/* Кнопки */
-input:checked+.label-switch {
-    background: #bada55;
-}
-
-input:checked+.label-switch:after {
-    left: calc(100% - 3px);
-    transform: translateX(-100%);
-}
-
-.label-switch:active:after {
-    width: 130px;
-}
-
-.switch {
-    gap: 5px;
-    display: flex;
-    align-items: center;
-}
-
-.switch span,
-.switch span a {
-    font-size: 15px;
-}
-
-.label-switch {
-    cursor: pointer;
-    width: 35px;
-    height: 24px;
-    background: grey;
-    display: block;
-    border-radius: 100px;
-    position: relative;
-}
-
-.label-switch:after {
-    content: '';
-    position: absolute;
-    top: 3px;
-    left: 5px;
-    width: 18px;
-    height: 18px;
-    background: #fff;
-    border-radius: 90px;
-    transition: .2s;
-}
-
 .section-title {
     z-index: 1;
     font-size: 24px;
@@ -135,18 +42,11 @@ input:checked+.label-switch:after {
     text-transform: uppercase;
     font-family: 'Gilroy-SemiBold';
 }
-
 .search-title {
     color: #fff;
     font-size: 2.2vw;
     font-family: 'Gilroy-Bold';
 }
-
-.card-title {
-    font-size: 2.2vw;
-    font-family: 'Gilroy-Bold';
-}
-
 .form {
     gap: 20px 0;
     position: relative;
@@ -157,14 +57,17 @@ input:checked+.label-switch:after {
     flex-direction: column;
     margin-top: 30px;
 }
-
+.form-search_form{ 
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
 .form .title {
     font-size: 24px;
     color: #2d2e47;
     display: flex;
     font-family: 'Gilroy-SemiBold';
 }
-
 .form-input,
 .form-select {
     max-width: 100%;
@@ -173,11 +76,9 @@ input:checked+.label-switch:after {
     font-size: 15px;
     padding: 10px;
 }
-
 .form .button {
     max-width: 100%;
 }
-
 .form-add {
     max-width: 100%;
     display: grid;
@@ -185,25 +86,21 @@ input:checked+.label-switch:after {
     grid-template-columns: 1fr;
     margin-top: 28px;
 }
-
 .form-add_footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .form-group {
     display: grid;
     grid-gap: 12px;
     grid-template-columns: 1fr 1fr;
 }
-
 .form-control {
     display: grid;
     grid-gap: 5px;
     grid-template-columns: 1fr;
 }
-
 .form-control input,
 .form-add textarea {
     border-radius: 5px;
@@ -211,21 +108,17 @@ input:checked+.label-switch:after {
     padding: 10px;
     background: #fff;
 }
-
 .form-add textarea {
     height: 113px;
 }
-
 .drag-drop {
     grid-gap: 19px;
     display: grid;
     grid-template-columns: 1fr;
 }
-
 .drag-drop_descr {
     color: #00000069;
 }
-
 .drag {
     border-radius: 5px;
     font-size: 15px;
@@ -238,40 +131,32 @@ input:checked+.label-switch:after {
     text-align: center;
     border: 1px dashed;
 }
-
 .message {
     font-size: 14px;
     color: red;
 }
-
 .message-error {
     position: absolute;
     color: #fff;
     font-size: 13px;
 }
-
 .error {
     background: red !important;
 }
-
 .error img {
     opacity: .7;
 }
-
 .drag-title {
     font-family: 'AdobeClean-Bold';
 }
-
 .drag-descr {
     margin: 5px 0;
 }
-
 .preview-list {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
 }
-
 .preview-item {
     border-radius: 5px;
     background: #fff;
@@ -281,7 +166,6 @@ input:checked+.label-switch:after {
     align-items: center;
     justify-content: center;
 }
-
 .preview-item .delete {
     position: absolute;
     z-index: 1;
@@ -289,116 +173,10 @@ input:checked+.label-switch:after {
     top: 9px;
     background: #fff;
 }
-
-.auth-inner {
-    display: flex;
-    align-items: center;
-    height: 100vh;
-}
-
-.auth-left {
-    background: #fcf8ed;
-    background-image: url('https://img.goodfon.ru/original/1920x1080/8/72/koshka-vzgliad-poza-kotenok-mordashka-ii-art-neiroset-sobaka.jpg');
-    background-repeat: no-repeat;
-    color: #fff;
-    text-align: center;
-    background-position: center;
-}
-
-.auth-right,
-.auth-left {
-    width: 50%;
-    height: 100%;
-    gap: 20px 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-
-.auth-left::before {
-    top: 0;
-    left: 0;
-    right: 0;
-    content: "";
-    width: 100%;
-    height: 100%;
-    opacity: .1;
-    background: #fcf8ed;
-    position: absolute;
-}
-
-.auth-wrap {
-    gap: 20px 0;
-    display: flex;
-    width: 330px;
-    padding: 0 20px;
-    flex-direction: column;
-}
-
-.auth-form_title {
-    font-family: 'Gilroy-Bold';
-}
-
-.auth-form {
-    gap: 15px 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.auth-form input {
-    border-radius: 5px;
-    font-size: 15px;
-    padding: 10px;
-    background: #fff;
-}
-
-.auth-form .button {
-    max-width: 100%;
-}
-
-.auth-description {
-    font-size: 20px;
-    font-family: 'Gilroy-SemiBold';
-}
-
-.auth-footer {
-    gap: 10px 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.auth-footer_info {
-    gap: 0 5px;
-    display: flex;
-    align-items: center;
-}
-
-.reset-password {
-    color: #000;
-}
-
-.auth-footer_link {
-    color: #326bdc;
-}
-
-
-
-
-
-
 .pets {
     padding: 60px 0;
     background: #fcf8ed;
 }
-
-.pets .section-title {
-    text-transform: uppercase;
-}
-
-
 .pets-list {
     width: 100%;
     overflow: auto;
@@ -407,33 +185,24 @@ input:checked+.label-switch:after {
     margin-top: 34px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-
 .search-list {
     display: grid;
     grid-gap: 15px;
     margin-top: 30px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-
 .pets-list::-webkit-scrollbar-thumb {
     width: 0;
     height: 0;
 }
-
 .pets-list .catalog-item {
     width: 262px;
 }
-
 .catalog-item {
     background: #fff;
     overflow: hidden;
     border-radius: 5px;
 }
-
-.publication {
-    color: #fff;
-}
-
 .catalog-image {
     display: flex;
     height: 180px;
@@ -441,7 +210,6 @@ input:checked+.label-switch:after {
     position: relative;
     overflow: hidden;
 }
-
 .catalog-item_control {
     width: 90%;
     padding: 15px 0;
@@ -452,11 +220,9 @@ input:checked+.label-switch:after {
     align-items: center;
     justify-content: space-between;
 }
-
 .status {
     font-size: 15px;
 }
-
 .catalog-info {
     gap: 16px 0;
     display: flex;
@@ -464,252 +230,44 @@ input:checked+.label-switch:after {
     flex-direction: column;
     position: relative;
 }
-
 .catalog-info_group {
     gap: 50px;
     display: flex;
 }
-
 .catalog-info_item {
     gap: 7px 0;
     display: flex;
     flex-direction: column;
 }
-
 .catalog-info_item label {
     font-size: 13px;
     color: #0000002c;
     font-family: 'Gilroy-Medium';
 }
-
 .catalog-info_item span {
     font-size: 15px;
     font-family: 'Gilroy-Medium';
 }
-
 .catalog-info_item a {
     color: #0d4fd3;
 }
-
 .publication {
     font-size: 13px;
     color: #fff;
 }
-
-/* Хлебные крошки */
-.breadcrumbs-list {
-    display: flex;
-}
-
-.breadcrumbs-list li,
-.breadcrumbs-list li a {
-    color: #fff;
-    font-family: 'Gilroy-SemiBold'
-}
-
-.list-profile li,
-.list-profile li a {
-    color: #000;
-    font-family: 'Gilroy-SemiBold'
-}
-
-.breadcrumb-separator {
-    margin: 0 7px;
-}
-
-/* Хлебные крошки */
-/* Пагинация */
-.ui-pagination {
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.ui-pagintaion_item {
-    margin-right: 13px;
-    width: 30px;
-    height: 30px;
-    border-radius: 4px;
-    background: transparent;
-    display: flex;
-    color: #000000;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: .2s ease;
-    border: 1px solid #000;
-}
-
-.ui-pagintaion_item.active {
-    color: #fff;
-    background: #0d4fd3;
-    border: 1px solid transparent;
-}
-
-.ui-pagintaion_item:hover {
-    color: #fff;
-    background: #0d4fd3;
-    border: 1px solid transparent;
-}
-
-.ui-pagintaion_prev {
-    margin-right: 15px;
-    cursor: pointer;
-}
-
-.ui-pagintaion_next {
-    cursor: pointer;
-    margin-left: 15px;
-}
-
-/* Пагинация */
 @media(max-width: 900px) {
 
     .section-title,
     .search-title {
         font-size: 20px;
     }
-
-    .auth-inner {
-        flex-direction: column;
-    }
-
-    .auth-left {
-        width: 100%;
-    }
-
-    .auth-left .logo,
-    .auth-left .auth-description {
-        display: none;
-    }
-
-    .reset-password {
-        color: #fff;
-    }
-
-    .auth-footer_link {
-        color: #f1ee14;
-    }
-
-    .auth-wrap {
-        color: #fff;
-        padding: 0 15px;
-        width: 93%;
-    }
-
-    .auth-right {
-        top: 0;
-        width: 100%;
-        right: 0;
-        left: 0;
-        position: absolute;
-    }
-
     .pets {
         padding: 37px 0;
     }
-
     .search-list {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
-
-@media(max-width: 800px) {
-    .mobile-menu {
-        width: 100%;
-        height: 100%;
-        background: #fff;
-        position: fixed;
-        left: 0;
-        bottom: 100%;
-        z-index: 999;
-        display: block;
-        transition: all .2s;
-    }
-
-    .mobile-menu.active {
-        bottom: 0;
-    }
-
-    .mobile-menu_inner {
-        display: flex;
-        height: 90%;
-        padding: 15px;
-        position: relative;
-        flex-direction: column;
-    }
-
-    .mobile-menu_header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .header-left .logo {
-        width: 110px;
-    }
-
-    .header-left .logo img {
-        filter: brightness(1);
-    }
-
-    .mobile-control {
-        font-size: 22px;
-        color: #0d4fd3;
-    }
-
-    .mobile-menu_nav {
-        margin-top: 10px;
-    }
-
-    .mobile-menu_item {
-        padding: 15px 0;
-    }
-
-    .mobile-menu_item a {
-        color: #000;
-        font-size: 20px;
-        font-family: 'Gilroy-SemiBold';
-    }
-
-    .mobile-menu_item a:hover {
-        color: #326BDC;
-    }
-
-    .mobile-menu_auth {
-        gap: 10px;
-        width: 100%;
-        display: flex;
-        margin-top: 19px;
-    }
-
-    .mobile-menu_auth a {
-        width: 50%;
-        max-width: 50%;
-        font-size: 15px;
-    }
-
-    .mobile-menu_title {
-        font-size: 20px;
-        font-family: 'Gilroy-Bold';
-    }
-
-    .mobile-menu_social {
-        margin-top: auto;
-    }
-
-    .mobile-menu_social-list {
-        gap: 0px 24px;
-        display: flex;
-        margin-top: 20px;
-    }
-
-    .mobile-menu_social-item a {
-        color: #000;
-        font-size: 20px;
-    }
-}
-
 @media(max-width: 600px) {
     .search-list {
         grid-template-columns: 1fr;

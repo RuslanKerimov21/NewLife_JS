@@ -1,0 +1,16 @@
+.breadcrumbs-list {
+    display: flex;
+}
+.breadcrumbs-list li,
+.breadcrumbs-list li a {
+    color: #fff;
+    font-family: 'Gilroy-SemiBold'
+}
+.list-profile li,
+.list-profile li a {
+    color: #000;
+    font-family: 'Gilroy-SemiBold'
+}
+.breadcrumb-separator {
+    margin: 0 7px;
+}

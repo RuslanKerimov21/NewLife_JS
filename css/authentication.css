@@ -1,0 +1,105 @@
+.authentication_inner{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.authentication_left{
+    color: #fff;
+    text-align: center;
+    background: #fcf8ed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../public/image/assets/koshka-kot-sobaka-para-druzia-mordashki-3.jpg');
+}
+.authentication_left::before{
+    top: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: .1;
+    background: #000;
+    position: absolute;
+    pointer-events: none;
+}
+.authentication_left,
+.authentication_right{
+    width: 50%;
+    gap: 20px 0;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.authentication_wrap{
+    gap: 20px 0;
+    display: flex;
+    width: 330px;
+    padding: 0 20px;
+    flex-direction: column;
+}
+.authentication_form_title{
+    font-family: 'Gilroy-Bold';
+}
+.authentication_form{
+    gap: 15px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.authentication_form input{
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    background: #fff;
+}
+.authentication_form .button{
+    max-width: 100%;
+}
+.authentication_description{
+    font-size: 20px;
+    font-family: 'Gilroy-Bold';
+}
+.authentication_footer{
+    gap: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.authentication_footer_group{
+    gap: 0 5px;
+    display: flex;
+    align-items: center;
+}
+.authentication_inner a{
+    color: #326bdc;
+}
+@media(max-width: 900px) {
+    .authentication_inner{
+        flex-direction: column;
+    }
+    .authentication_left{
+        width: 100%;
+    }
+    .authentication_left .logo,
+    .authentication_description {
+        display: none;
+    }
+    .authentication_footer_group a{
+        color: #f1ee14;
+    }
+    .authentication_wrap{
+        width: 93%;
+        color: #fff;
+        padding: 0 15px;
+    }
+    .authentication_right{
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%; 
+        position: absolute;
+    }
+}

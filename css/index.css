@@ -1,23 +1,4 @@
-@font-face {
-    font-family: 'AdobeClean-Bold';
-    src: url(../public/fonts/Adobe/AdobeClean-Bold.woff);
-}
-@font-face {
-    font-family: 'AdobeClean-Regular';
-    src: url(../public/fonts/Adobe/AdobeClean-Regular.woff);
-}
-@font-face {
-    font-family: 'Gilroy-Bold';
-    src: url(../public/fonts/Gilroy/Gilroy-Bold.woff);
-}
-@font-face {
-    font-family: 'Gilroy-Medium';
-    src: url(../public/fonts/Gilroy/Gilroy-Medium.woff);
-}
-@font-face {
-    font-family: 'Gilroy-SemiBold';
-    src: url(../public/fonts/Gilroy/Gilroy-Semibold.woff);
-}
+@import './global.css';
 html{
     box-sizing: border-box;
 }
@@ -68,6 +49,9 @@ img{
     max-width: 1649px;
     margin: 0 auto;
     padding: 0 50px;
+}
+.logo img{
+    object-fit: contain;
 }
 @media(max-width: 900px) {
     .container{

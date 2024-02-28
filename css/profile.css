@@ -136,7 +136,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.catalog-list_moderator{
+.catalog-list_moderator {
     width: 100%;
     display: grid;
     grid-gap: 15px;
@@ -169,17 +169,17 @@
     .account-info_items {
         grid-template-columns: 1fr 1fr;
     }
-    
-    .catalog-list_moderator{
+
+    .catalog-list_moderator {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    
 }
 
 @media(max-width: 900px) {
+
     .catalog-list,
-    .catalog-list_profile{
+    .catalog-list_profile {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -194,8 +194,8 @@
         grid-template-columns: 1fr;
     }
 
-    .catalog-list_profile,
-    .catalog-list {
+    .catalog-list,
+    .catalog-list_profile {
         grid-template-columns: 1fr;
     }
 

@@ -1,0 +1,40 @@
+.switch {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+.switch span,
+.switch span a {
+    font-size: 15px;
+}
+.switch label{
+    width: 35px;
+    height: 24px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    background: grey;
+    border-radius: 100px;
+}
+.switch label::after{
+    top: 3px;
+    left: 5px;
+    width: 18px;
+    content: '';
+    height: 18px;
+    transition: .2s;
+    background: #fff;
+    position: absolute;
+    border-radius: 90px;
+}
+.switch label:active::after{
+    width: 130px;
+}
+switch input:checked+.switch label {
+    background: #bada55;
+}
+
+switch input:checked+.switch label::after {
+    left: calc(100% - 3px);
+    transform: translateX(-100%);
+}

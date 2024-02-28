@@ -37,9 +37,6 @@
 .reviews-text{
     line-height: 150%;
 }
-.publication{
-    color: #0000002c;
-}
 @media(max-width: 900px){
     .reviews{
         padding: 37px 0;

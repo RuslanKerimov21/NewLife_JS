@@ -32,6 +32,26 @@
     background: #000;
     margin-left: auto;
 }
+.slider-button {
+    display: flex;
+    border-radius: 100%;
+    align-items: center;
+    width: 30px !important;
+    justify-content: center;
+    height: 30px !important;
+    color: #fff !important;
+}
+.slider-button::after {
+    content: none !important;
+}
+.swiper-pagination {
+    margin-top: 30px;
+    position: relative !important;
+    text-align: left !important;
+}
+.swiper-pagination-bullet {
+    background: #fff !important;
+}
 @media(max-width: 900px){
     .offer-inner{
         gap: 30px;

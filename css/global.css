@@ -1,10 +1,36 @@
 @import url('./ui.css');
-@import url('./search.css');
+@import url('./offer.css');
+@import url('./switch.css');
 @import url('./footer.css');
+@import url('./search.css');
 @import url('./header.css');
+@import url('./profile.css');
 @import url('./reviews.css');
 @import url('./subscribe.css');
 @import url('./pets.page.css');
-@import url('./dashboard.css');
 @import url('./advantages.css');
-@import url('./form.search.css');
+@import url('./breadcrumb.css');
+@import url('./pagination.css');
+@import url('./mobile.menu.css');
+@import url('./search.block.css');
+@import url('./authentication.css');
+@font-face {
+    font-family: 'AdobeClean-Bold';
+    src: url(../public/fonts/Adobe/AdobeClean-Bold.woff);
+}
+@font-face {
+    font-family: 'AdobeClean-Regular';
+    src: url(../public/fonts/Adobe/AdobeClean-Regular.woff);
+}
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url(../public/fonts/Gilroy/Gilroy-Bold.woff);
+}
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url(../public/fonts/Gilroy/Gilroy-Medium.woff);
+}
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url(../public/fonts/Gilroy/Gilroy-Semibold.woff);
+}

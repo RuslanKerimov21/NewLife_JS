@@ -1,28 +1,23 @@
 .search-top {
     padding: 30px 0;
 }
-
 .search-top_inner {
     display: grid;
     grid-gap: 12px;
     max-width: 36%;
     grid-template-columns: 1fr;
 }
-
 .search-bottom {
     padding: 60px 0;
 }
-
 .catalog-result {
     font-size: 24px;
     font-family: 'Gilroy-Bold';
 }
-
 @media(max-width: 900px) {
     .search-bottom {
         padding: 37px 0;
     }
-
     .search-top_inner {
         max-width: 100%;
     }
