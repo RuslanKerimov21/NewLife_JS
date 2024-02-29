@@ -209,6 +209,10 @@
     width: 100%;
     position: relative;
     overflow: hidden;
+    background: #000;
+}
+.catalog-image img{
+    opacity: .7;
 }
 .catalog-item_control {
     width: 90%;
