@@ -1,67 +1,83 @@
-.header {
-    background-position: 25% 26% !important;
+.page-nav {
+    color: #fff;
+    padding: 60px 0;
 }
-
-.pets-slider {
-    height: 400px;
+.offer-catalog_page {
+    padding: 60px 0;
 }
-
-.slider-wrapper,
-.slider-item {
-    height: 100%;
-}
-
-.slider-wrapper {
-    overflow: hidden;
-}
-
-.pets-card_inner {
-    padding: 40px 0;
-}
-
-.pets-card_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.pets-card_info {
-    max-width: 50%;
-    margin-top: 30px;
-}
-
-.pets-card_title {
-    font-size: 1.7vw;
-    font-family: 'Gilroy-Bold';
-}
-
-.pets-card_info-list{
-    margin-top: 20px;
+.offer-catalog_page-inner {
+    gap: 15px 0;
     display: flex;
     flex-direction: column;
-    gap: 6px 0;
 }
-
-.pets-card_info-item{
-    gap: 0 10px;
-    display: flex;
-}
-
-.pets-card_info-item span{
+.catalog-page_title {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 7px;
     font-family: 'Gilroy-Bold';
 }
-
+.catalog-page_info{
+    padding: 35px 0;
+}
+.catalog-page_inner {
+    gap: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.catalog-page_gallerey{
+    gap: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+.catalog-page_subtitle{
+    font-size: 25px;
+    font-family: 'Gilroy-Bold';
+}
+.catalog-page_gallerey-list {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.catalog-page_gallerey-item{
+    height: 240px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.catalog-page_info-group{
+    display: grid;
+    grid-gap: 17px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.catalog-page_info-item{
+    gap: 7px 0;
+    display: flex;
+    flex-direction: column;
+}
+.catalog-page_info-item label{
+    font-size: 20px;
+    color: #ffffff70;
+    font-family: 'Gilroy-Bold';
+}
+.catalog-page_info-item span{
+    color: #fff;
+}
+.catalog-page_info-item span a{
+    color: #fbd345;
+}
 @media(max-width: 900px){
-    .pets-card_title{
-        font-size: 20px;
+    .catalog-page_title{
+        font-size: 25px;
+    }
+    .catalog-page_info-group{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
-
-@media(max-width: 800px){
-    .pets-card_inner .container{
-        padding: 0 15px;
+@media(max-width: 600px){
+    .catalog-page_info-group{
+        grid-template-columns: 1fr 1fr;
     }
-    .pets-card_info{
-        max-width: 100%;
+    .catalog-page_gallerey-list{
+        grid-template-columns: 1fr;
     }
 }
